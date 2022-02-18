@@ -54,7 +54,29 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
       3. `sudo snap install --classic certbot`
       4. `sudo ln -s /snap/bin/certbot /usr/bin/certbot`
       5. `sudo certbot --nginx`
-   6. Added Node.js app
+   6. Install NPM and Node.js
+      1. Review contents of https://deb.nodesource.com/setup_17.x to your liking
+      2. `curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -`
+      3. `sudo apt-get install -y nodejs`
+   7. Create SSH key and add to GitHub
+      1. Follow instructions at https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+      2. Add key to https://github.com/settings/keys
+   8. Add Node.js app
+      1. `git clone git@github.com:sdegutis/Novo-Cantico.git app`
+      2. `cd app`
+      3. `npm install`
+      4. `npm run build`
+      5. `node out/main.js`
+      6. Quit out with Ctrl-C
+   9. Make Node.js app stay always on via PM2
+      1.  `cd app` if not still in there
+      2. `sudo npm install pm2@latest -g`
+      3. `pm2 start out/main.js`
+      4. Make sure it's working
+         1. `curl -i 'http://localhost:8080'`
+      5. `pm2 startup` - follow instructions
+         1. `sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu`
+         2. `pm2 save`
 
 ## License
 
