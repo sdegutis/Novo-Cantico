@@ -14,9 +14,10 @@
    1. Open terminal in project dir
    2. Run `node out/main.js`
    3. Output should have a URL you can open
-   4. It should say hello world as HTML
-   5. Change the response body in `app/main.ts` and save
-   6. Refresh browser, it should reflect your changes
+   4. Visit `http://localhost:8080/test`
+   5. It should say hello world as HTML
+   6. Change the response body in `app/main.ts` and save
+   7. Refresh browser, it should reflect your changes
 
 Now VS Code will automatically watch, build, and type-check your TypeScript code.
 
