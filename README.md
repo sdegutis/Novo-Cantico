@@ -47,7 +47,8 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
    3. `sudo apt install nginx`
    4. Added domain to nginx
       1. `sudo vim /etc/nginx/sites-enabled/default`
-      2. Changed `server_name _;` to `server_name www.novocantico.org novocantico.org;`
+      2. Change `server_name _;` to `server_name www.novocantico.org novocantico.org;`
+      3. Comment out `root` and `index` lines
    5. Added HTTPS support
       1. Followed directions on https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal
       2. `sudo snap install core; sudo snap refresh core`
@@ -87,6 +88,9 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
           proxy_pass         http://0.0.0.0:8080;
           ```
        3. `sudo service nginx restart`
+       4. Test it out:
+          1. `curl -i 'http://localhost:8080'`
+          2. `curl -i https://www.novocantico.org/`
 
 ## License
 
