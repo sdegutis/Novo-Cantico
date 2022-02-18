@@ -10,6 +10,13 @@
 1. Clone this repo
 2. In VS Code, run task "Tasks: Manage Automatic Tasks in Folder" and Allow it
 3. Reload window
+4. Make sure project runs
+   1. Open terminal in project dir
+   2. Run `node out/main.js`
+   3. Output should have a URL you can open
+   4. It should say hello world as HTML
+   5. Change the response body in `app/main.ts` and save
+   6. Refresh browser, it should reflect your changes
 
 Now VS Code will automatically watch, build, and type-check your TypeScript code.
 
