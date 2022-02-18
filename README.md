@@ -102,6 +102,12 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
    4. Commit
    5. Push
 
+Now you can:
+
+1. Develop locally in VS Code with debugger (F5)
+2. Make http://localhost:8080/ to your liking
+3. Deploy by committing and pushing as normal
+
 ## License
 
 MIT (see [LICENSE](LICENSE))

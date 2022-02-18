@@ -12,7 +12,7 @@ addRouteable({
       headers: {
         'Content-Type': 'text/html',
       },
-      body: Buffer.from('Hello <b>world</b>!'),
+      body: Buffer.from('Hello <i>world</i>.'),
     };
   }
 });
