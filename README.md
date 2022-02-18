@@ -92,8 +92,12 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
           1. `curl -i 'http://localhost:8080'`
           2. `curl -i https://www.novocantico.org/`
 6. Make local repo push to GitHub and site at same time
-   1. `git remote set-url --add --push origin git@github.com:sdegutis/Novo-Cantico.git`
-   2. `git remote set-url --add --push origin ubuntu@novocantico.org:app`
+   1. Locally:
+      1. `git remote set-url --add --push origin git@github.com:sdegutis/Novo-Cantico.git`
+      2. `git remote set-url --add --push origin ubuntu@novocantico.org:app`
+   2. In remote server:
+      1. `cd app`
+      2. `git config --local receive.denyCurrentBranch updateInstead`
 
 ## License
 
