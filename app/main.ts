@@ -19,5 +19,3 @@ addRouteable({
 
 persisted.server ??= new Server(8080);
 persisted.server.handler = makeRequestHandler(makeRouteHandler(loadRoutes()));
-
-console.log('Hello world!');
