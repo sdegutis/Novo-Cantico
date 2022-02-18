@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "preserve",
+    "target": "ES2020",
+    "noEmit": true,
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "exactOptionalPropertyTypes": true,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "skipLibCheck": true,
+  },
+  "include": [
+    "./app/**/*.ts",
+    "./app/**/*.d.ts",
+    "./app/**/*.tsx",
+    "./global.d.ts"
+  ],
+  "references": [
+    {
+      "path": "./src"
+    }
+  ]
+}

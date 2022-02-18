@@ -5,7 +5,15 @@
 "Novo Cantico" is taken from the chorus of [Puer natus in Bethlehem](https://www.youtube.com/watch?v=A1k5YTmxIVc&t=2573s) and means "a new song". Software and music have many principles in common, and this software project aims to find a new harmony in software development by starting from first principles rather than conventional wisdom.
 
 
-## Steps
+## Setting up local project
+
+1. Clone this repo
+2. In VS Code, run task "Tasks: Manage Automatic Tasks in Folder" and Allow it
+3. Reload window
+
+Now VS Code will automatically watch, build, and type-check your TypeScript code.
+
+## Setting up website
 
 1. In EC2, launched new instance
    1. ami-0fb653ca2d3203ac1 (Ubuntu Server 20.04, 64-bit x86)
