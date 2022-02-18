@@ -64,10 +64,11 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
    8. Add Node.js app
       1. `git clone git@github.com:sdegutis/Novo-Cantico.git app`
       2. `cd app`
-      3. `npm install`
-      4. `npm run build`
-      5. `node out/main.js`
-      6. Quit out with Ctrl-C
+      3. `echo 'BASE_URL=https://www.novocantico.org/' > .env`
+      4. `npm install`
+      5. `npm run build`
+      6. `node out/main.js`
+      7. Quit out with Ctrl-C
    9. Make Node.js app stay always on via PM2
       1.  `cd app` if not still in there
       2. `sudo npm install pm2@latest -g`
@@ -77,6 +78,15 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
       5. `pm2 startup` - follow instructions
          1. `sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu`
          2. `pm2 save`
+   10. Get it working from port 80
+       1. `sudo vim /etc/nginx/sites-enabled/default`
+       2. Replace contents of `location /` with:
+          ```
+          proxy_set_header   X-Forwarded-For $remote_addr;
+          proxy_set_header   Host $http_host;
+          proxy_pass         http://0.0.0.0:8080;
+          ```
+       3. `sudo service nginx restart`
 
 ## License
 
