@@ -98,6 +98,9 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
    2. In remote server:
       1. `cd app`
       2. `git config --local receive.denyCurrentBranch updateInstead`
+   3. Change body in `app/main.ts`
+   4. Commit
+   5. Push
 
 ## License
 
