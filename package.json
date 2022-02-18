@@ -1,7 +1,7 @@
 {
   "name": "novo-cantico",
   "version": "1.0.0",
-  "description": "*Rethinking web software from first principles.*",
+  "description": "Rethinking a new harmony for web software from first principles.",
   "main": "index.js",
   "scripts": {
     "build": "tsc --build",
