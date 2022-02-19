@@ -29,7 +29,7 @@ Novo Cantico is a new layer just on top of Node.js, including:
 * [A new (old) database layer](#a-new-old-database-layer)
 * [A new (old) model layer](#a-new-old-model-layer)
 
-The orthogonality of these layers has several interesting implications:
+The design and interaction of these layers has several interesting implications:
 
 * [Zero-downtime deployment](#zero-downtime-deployment)
 * [Userland asset pipelines](#userland-asset-pipelines)
