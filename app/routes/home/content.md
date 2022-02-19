@@ -8,13 +8,16 @@
 Humanity develops the arts and sciences by distilling lessons learned from the past, and solidifying them into a new foundation; we all stand on the shoulders of giants. Novo Cantico is a project that aims to take lessons learned from the difficulties of modern web development, start from first principles, and find a new harmony.
 
 
+
 ## This site's three purposes:
 
 1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico), which is also the source code to the site you're on right now.
 
 2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions on this page, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
 
-3. **Offer my services:** My name is Steven Degutis, and I'm an independent software consultant with 10 years of professional software engineering experience, and another 10 of hobbyist software experience before that. I'm available for hire, feel free to [send me an email](mailto:sbdegutis+novocantico@gmail.com). You can also [sponsor me on GitHub](https://github.com/sdegutis/Novo-Cantico) to enable me to spend more time developing Novo Cantico.
+3. **Offer my services:** My name is [Steven Degutis](https://sdegutis.github.io/), and I'm an independent software consultant with 10 years of professional software engineering experience, and another 10 of hobbyist software experience before that. I'm available for hire, feel free to [send me an email](mailto:sbdegutis+novocantico@gmail.com). You can also [sponsor me on GitHub](https://github.com/sdegutis/Novo-Cantico) to enable me to spend more time developing Novo Cantico.
+
+
 
 ## What is Novo Cantico concretely?
 
@@ -23,16 +26,17 @@ Novo Cantico is a new layer just on top of Node.js, including:
 * A new TypeScript runtime
 * A new router
 * A new JSX view layer
-* A new database layer
+* A new (old) database layer
 * A new (old) model layer
 
 It replaces the need for:
 
 * Express.js or other routers
-* Webpack or other bundlers
 * View libraries (EJS, Handlebars, etc)
 * Database (kinda; see below)
 * ORM layers
+
+
 
 ### A new TypeScript runtime
 
@@ -48,6 +52,8 @@ The very base layer of Novo Cantico is an unopinionated TypeScript runtime, with
 
 The runtime simply calls `app/main.{ts,tsx}` and lets you do whatever you want from there. Typically this file would start a server (if not already started), and add new routes to it.
 
+
+
 ### A new router
 
 Novo Cantico uses a push-based router, which maps routes (method & path) to TypeScript functions which provide a consistent response.
@@ -57,6 +63,8 @@ For example, you might set the key `GET /` to the landing page handler. Or you m
 Because routes in Novo Cantico are push-based, and independent of model objects or anything else, you have the freedom to decide how you want to generate routes. One technique I found helpful has been to create model objects, and store route handler objects on them, so that you can access the route's path directly and use it in links.
 
 Check out [app/core/](https://github.com/sdegutis/Novo-Cantico/tree/main/app/core) to see how I implemented the router and server.
+
+
 
 ### A new JSX view layer
 
@@ -69,12 +77,25 @@ One technique I found helpful is to create a function that scans a JSX tree for 
 Check out the runtime-side implementation of JSX functionality at [app/core/jsx.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/core/jsx.tsx). (The lower level does nothing but ask `sucrase` to translate it into simple JavaScript objects).
 
 
+
+### A new (old) database layer
+
+TODO
+
+
+
+### A new (old) model layer
+
+TODO
+
+
+
 ## Side-effects of all these
 
 Because the above layers are all orthogonal, they have many inherent advantages:
 
+
+
 ### Zero-downtime deployment
 
 When a Novo Cantico web app is deployed, the base layer watches files under `app/` for changes. When it sees any change that can't be handled by the runtime itself, it shuts down the runtime and creates a new one. This essentially allows 0-downtime deployments.
-
-###
