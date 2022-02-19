@@ -3,7 +3,7 @@ const Html: JSX.Component<{}> = (attrs, children) => <>
   <html lang="en">
     {children}
   </html>
-</>
+</>;
 
 const Head: JSX.Component<{ imagePath?: string, title?: string, description?: string | undefined }> = (attrs, children) => <>
   <head>
@@ -22,10 +22,7 @@ const Head: JSX.Component<{ imagePath?: string, title?: string, description?: st
 const SiteFooter: JSX.Component<{}> = (attrs, children) => <>
   <footer style='color:#999; text-align:center; margin:3em 1em'>
     <p>
-      {new Date().getFullYear()} Steven Degutis &copy; All Rights Reserved
-      {' | '}
-      <a href="mailto:sbdegutis@gmail.com">Contact</a>
-      {' | '}
+      <a href="https://github.com/sdegutis/Novo-Cantico">GitHub Project Page</a>
     </p>
   </footer>
 </>;
