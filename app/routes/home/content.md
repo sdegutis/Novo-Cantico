@@ -8,7 +8,7 @@
 Humanity develops the arts and sciences by distilling lessons learned from the past, and solidifying them into a new foundation; we all stand on the shoulders of giants. Novo Cantico is a project that aims to take lessons learned from the difficulties of modern web development, start from first principles, and find a new harmony.
 
 
-This site serves three purposes:
+## This site's three purposes:
 
 1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico), which is also the source code to the site you're on right now.
 
@@ -31,7 +31,8 @@ It replaces the need for:
 * Express.js or other routers
 * Webpack or other bundlers
 * View libraries (EJS, Handlebars, etc)
-* Database or ORM layers
+* Database (kinda; see below)
+* ORM layers
 
 ### A new TypeScript runtime
 
