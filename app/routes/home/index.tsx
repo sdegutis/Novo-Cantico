@@ -3,6 +3,7 @@ import { Page } from "../../components/page/page";
 import { renderElement } from "../../core/jsx";
 import { addRouteable } from "../../core/router";
 import { markdown } from "../../util/markdown";
+import { InCarattere } from "../fonts";
 
 const content = markdown.render(__dir.filesByName['content.md']!.buffer.toString('utf8'));
 
@@ -18,7 +19,7 @@ addRouteable({
       body: renderElement(<>
         <Page title="Novo Cantico">
           <NarrowContainer>
-            <h1 style="font-family: 'Carattere', cursive;">Novo Cantico</h1>
+            <InCarattere><h1 style='font-size:300%'>Novo Cantico</h1></InCarattere>
             <p><em>Finding a new harmony for web software from first principles.</em></p>
             <hr />
             {content}

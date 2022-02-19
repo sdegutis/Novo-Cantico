@@ -1,4 +1,3 @@
-import { carattereFont } from "../../routes/fonts";
 import { staticRouteFor } from "../../util/static";
 import fixExternalLinks from './fix-external-links.js';
 
@@ -24,7 +23,6 @@ const Head: JSX.Component<{ imagePath?: string, title?: string, description?: st
     <meta name="description" content={attrs.description ?? "Finding a new harmony for web software from first principles"} />
 
     <Stylesheet src={staticRouteFor(__dir.filesByName['page.css']!)} />
-    <Stylesheet src={staticRouteFor(carattereFont)} />
 
     {children}
   </head>
