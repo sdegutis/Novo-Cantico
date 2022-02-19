@@ -14,7 +14,7 @@ This site serves three purposes:
 
 2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions on this page, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
 
-3. **Offer my services:** My name is Steven Degutis, and I'm an independent software consultant with 10 years of professional software engineering experience, and another 10 of hobbyist software experience before that. I'm available for hire, feel free to [send me an email](mailto:sbdegutis+novocantico@gmail.com). You can also [sponsor me on GitHub](https://github.com/sdegutis/Novo-Cantico) to enable me to continue developing Novo Cantico.
+3. **Offer my services:** My name is Steven Degutis, and I'm an independent software consultant with 10 years of professional software engineering experience, and another 10 of hobbyist software experience before that. I'm available for hire, feel free to [send me an email](mailto:sbdegutis+novocantico@gmail.com). You can also [sponsor me on GitHub](https://github.com/sdegutis/Novo-Cantico) to enable me to spend more time developing Novo Cantico.
 
 ## What is Novo Cantico concretely?
 
