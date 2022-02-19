@@ -10,11 +10,11 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 This site serves three purposes:
 
-1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico).
+1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico), which is also the source code to the site you're on right now.
 
 2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions on this page, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
 
-3. **Offer my services:** My name is Steven Degutis, and I'm an independent software consultant with 10 years of professional software engineering experience, and another 10 of hobbyist software experience before that. I'm available for hire, [send me an email](mailto:sbdegutis+novocantico@gmail.com) to discuss this with me. You can also [sponsor me on GitHub](https://github.com/sdegutis/Novo-Cantico) to enable me to continue developing Novo Cantico.
+3. **Offer my services:** My name is Steven Degutis, and I'm an independent software consultant with 10 years of professional software engineering experience, and another 10 of hobbyist software experience before that. I'm available for hire, feel free to [send me an email](mailto:sbdegutis+novocantico@gmail.com). You can also [sponsor me on GitHub](https://github.com/sdegutis/Novo-Cantico) to enable me to continue developing Novo Cantico.
 
 ## What is Novo Cantico concretely?
 
@@ -57,6 +57,6 @@ Because the above layers are all orthogonal, they have many inherent advantages:
 
 ### Zero-downtime deployment
 
-When a Novo Cantico web app is deployed, this base layer never changes, but when any files under `app/` change, the runtime can be reloaded from scratch, with in a fresh (globals) context. As a byproduct, this allows 0-downtime deployments.
+When a Novo Cantico web app is deployed, the base layer watches files under `app/` for changes. When it sees any change that can't be handled by the runtime itself, it shuts down the runtime and creates a new one. This essentially allows 0-downtime deployments.
 
-
+###
