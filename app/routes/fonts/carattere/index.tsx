@@ -1,6 +1,6 @@
-import { Stylesheet } from "../../components/page/page";
-import { baseUrl } from "../../core/http-server";
-import { staticRouteFor } from "../../util/static";
+import { Stylesheet } from '../../../components/page/page';
+import { baseUrl } from '../../../core/http-server';
+import { staticRouteFor } from '../../../util/static';
 import carattere from './carattere.css';
 
 const inlineFontCss = carattere.buffer.toString('utf8').replace(/url\((.+?)\)/g, (whole, filename) => {

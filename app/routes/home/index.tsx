@@ -3,7 +3,7 @@ import { Page } from "../../components/page/page";
 import { renderElement } from "../../core/jsx";
 import { addRouteable } from "../../core/router";
 import { markdown } from "../../util/markdown";
-import { InCarattere } from "../fonts";
+import { InCarattere } from "../fonts/carattere";
 
 const content = markdown.render(__dir.filesByName['content.md']!.buffer.toString('utf8'));
 
