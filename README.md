@@ -13,7 +13,7 @@
    3. Output should have a URL you can open
    4. Visit `http://localhost:8080/test`
    5. It should say hello world as HTML
-   6. Change the response body in `app/main.ts` and save
+   6. Change the response body in `app/routes/test/index.tsx` and save
    7. Refresh browser, it should reflect your changes
 
 Now VS Code will automatically watch, build, and type-check your TypeScript code.
