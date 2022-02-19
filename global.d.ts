@@ -41,3 +41,8 @@ declare module '*.json' {
   const file: FsFile;
   export default file;
 }
+
+declare module '*.txt' {
+  const file: FsFile;
+  export default file;
+}

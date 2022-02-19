@@ -1,3 +1,5 @@
+import { inlineFontCss } from "../routes/fonts";
+
 const Html: JSX.Component<{}> = (attrs, children) => <>
   {'<!DOCTYPE html>'}
   <html lang="en">
@@ -14,6 +16,8 @@ const Head: JSX.Component<{ imagePath?: string, title?: string, description?: st
     <meta property="og:title" content={'Novo Cantico' + (attrs.title ? `: ${attrs.title}` : '')} />
     <meta property="og:locale" content="en_US" />
     <meta name="description" content={attrs.description ?? "Rethinking a new harmony for software from first principles"} />
+
+    <style>{inlineFontCss}</style>
 
     {children}
   </head>

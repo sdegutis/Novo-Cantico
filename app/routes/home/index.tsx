@@ -1,6 +1,6 @@
-import { Page } from "../components/page";
-import { renderElement } from "../core/jsx";
-import { addRouteable } from "../core/router";
+import { Page } from "../../components/page";
+import { renderElement } from "../../core/jsx";
+import { addRouteable } from "../../core/router";
 
 addRouteable({
   method: 'GET',
@@ -13,6 +13,9 @@ addRouteable({
       },
       body: renderElement(<>
         <Page title="Novo Cantico">
+
+          <h1 style="font-family: 'Carattere', cursive;">Novo Cantico</h1>
+
           Coming soon.
         </Page>
       </>),

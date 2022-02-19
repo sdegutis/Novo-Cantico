@@ -1,6 +1,6 @@
 # Novo Cantico
 
-*Rethinking a new harmony for web software from first principles.*
+*Finding a new harmony for web software from first principles.*
 
 ## Setting up local project
 

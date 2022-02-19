@@ -3,6 +3,7 @@ import { makeRequestHandler, Server } from "./core/http-server";
 import { makeRouteHandler } from './core/route-handler';
 import { addRouteable, loadRoutes } from './core/router';
 import './routes/home';
+import './routes/fonts';
 
 addRouteable({
   method: 'GET',
