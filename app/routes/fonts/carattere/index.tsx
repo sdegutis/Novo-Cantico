@@ -1,7 +1,6 @@
 import { makeFontComponent } from "../../../util/css";
 
-export const InCarattere = makeFontComponent(
-  __dir,
-  'carattere.css',
-  `font-family: 'Carattere', cursive`,
-);
+export const Carattere = {
+  fontFamily: `'Carattere', cursive`,
+  load: makeFontComponent(__dir, 'carattere.css'),
+};
