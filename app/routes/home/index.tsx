@@ -21,11 +21,7 @@ addRouteable({
           <NarrowContainer>
             <DavidLibre.load />
             <h1 style={`font-size:300%; font-family: ${DavidLibre.fontFamily}`}>Novo Cantico</h1>
-            <p><em>Finding a new harmony for web software from first principles.</em></p>
-            <hr />
             {content}
-            <hr />
-            <i>Coming soon.</i>
           </NarrowContainer>
         </Page>
       </>),
