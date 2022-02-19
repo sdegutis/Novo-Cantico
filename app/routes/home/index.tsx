@@ -20,9 +20,10 @@ addRouteable({
         <Page title="Novo Cantico">
           <Stylesheet src={staticRouteFor(__dir.filesByName['home.css']!)} />
           <NarrowContainer style='margin-bottom:7em'>
-            <iframe src="https://github.com/sponsors/sdegutis/button" title="Sponsor sdegutis" height="35" width="116" style="border: 0; float:right"></iframe>
-            <h1 style='margin-bottom:0'>Novo Cantico</h1>
-            <p style='margin-bottom:3em'><em>Finding a new harmony for web software from first principles.</em></p>
+            <div class='header-box'>
+              <h1>Novo Cantico</h1>
+              <iframe src="https://github.com/sponsors/sdegutis/button" title="Sponsor sdegutis" height="35" width="116" style="border: 0; margin-bottom: 7px"></iframe>
+            </div>
             {content}
           </NarrowContainer>
         </Page>
