@@ -50,6 +50,8 @@ Novo Cantico compiles JSX to `{ tag: string, attrs: object, children: any[] }`, 
 
 One technique I found helpful is to create a function that scans a JSX tree for stylesheets and `<script`> tags, and hoists them up to the `<head>` element before sending to the browser.
 
+Check out the runtime-side implementation of JSX functionality at [app/core/jsx.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/core/jsx.tsx). (The lower level does nothing but ask `sucrase` to translate it into simple JavaScript objects).
+
 
 ## Side-effects of all these
 
