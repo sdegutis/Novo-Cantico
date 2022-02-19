@@ -26,7 +26,7 @@ The very base layer of Novo Cantico is an unopinionated TypeScript runtime, with
 
 * **Runtime** support, implemented in [src/runtime.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/runtime.ts) and [src/filesys.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/filesys.ts)) makes this not only possible but also convenient (by adding globals `__dir` and `__file`).
 
-* **Hot-reloading** is done by [chokidar](https://www.npmjs.com/package/chokidar) which watches `app/` and reloads the runtime.
+* **Hot-reloading** is done by [chokidar](https://www.npmjs.com/package/chokidar) which watches the whole `app/` tree.
 
 * **VS Code support**, including full type checking, working auto-imports, and full VS Code debugging support, is gained through carefully crafted config files.
 
