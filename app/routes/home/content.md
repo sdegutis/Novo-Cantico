@@ -35,7 +35,7 @@ The orthogonality of these layers has several interesting implications:
 * Userland asset pipelines
 * Free eternal-file-caching
 * Data can live next to code
-* No language/format lock-in
+* No markup language lock-in
 * Pre-rendering is the default
 
 
@@ -140,7 +140,7 @@ And since code and data can live side by side, you can create helper functions t
 
 
 
-### No language/format lock-in
+### No markup language lock-in
 
 Traditionally static site generators either have a fixed markup language, or allow only a few choices via arcane configuration, which results in lock-in and limited flexibility.
 
