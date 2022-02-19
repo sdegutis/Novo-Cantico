@@ -1,3 +1,4 @@
+import fixExternalLinks from './fix-external-links.js';
 import { inlineFontCss } from "../../routes/fonts";
 import { staticRouteFor } from "../../util/static";
 
@@ -45,6 +46,7 @@ export const Page: JSX.Component<{
   <Html>
     <Head title={attrs.title} description={attrs.description} />
     <body>
+      <script src={staticRouteFor(fixExternalLinks)} defer />
       <main>
         {children}
       </main>
