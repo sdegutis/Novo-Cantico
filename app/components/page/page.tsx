@@ -8,7 +8,7 @@ const Html: JSX.Component<{}> = (attrs, children) => <>
   </html>
 </>;
 
-const Stylesheet: JSX.Component<{ src: string }> = (attrs, children) => <>
+export const Stylesheet: JSX.Component<{ src: string }> = (attrs, children) => <>
   <link rel="stylesheet" href={attrs.src} />
 </>;
 
