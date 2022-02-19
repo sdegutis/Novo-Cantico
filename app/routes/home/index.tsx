@@ -21,6 +21,7 @@ addRouteable({
           <Stylesheet src={staticRouteFor(__dir.filesByName['home.css']!)} />
           <NarrowContainer style='margin-bottom:7em'>
             <h1 style='margin-bottom:0'>Novo Cantico</h1>
+            <p style='margin-bottom:3em'><em>Finding a new harmony for web software from first principles.</em></p>
             {content}
           </NarrowContainer>
         </Page>
