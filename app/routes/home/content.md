@@ -1,5 +1,5 @@
 
-## Philosophy of Novo Cantico
+## The Philosophy of Novo Cantico
 
 "Novo Cantico" is taken from the chorus of [Puer natus in Bethlehem](https://www.youtube.com/watch?v=A1k5YTmxIVc&t=2573s) and means "a new song". Software and music are both rooted in principles and patterns; both are arts and sciences; both reflect a beauty, harmony, and order that's visible only to the mind, but which have a very real effect on our lives.
 
@@ -13,7 +13,7 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions via this site, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
 
-3. **Offer my services:** My name is [Steven Degutis](https://sdegutis.github.io/), and I'm an independent software consultant with 10 years of professional software engineering experience. I'm available for hire, feel free to email me. You can also sponsor me on GitHub to enable me to spend more time developing Novo Cantico.
+3. **Offer my services:** My name's Steven, I'm an independent software consultant with over a decade of experience. I'm available for hire, [email me](mailto:sbdegutis+novocantico@gmail.com) and let's talk. You can also sponsor me on GitHub to enable me to spend more time developing Novo Cantico.
 
 
 
