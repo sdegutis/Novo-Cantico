@@ -35,7 +35,7 @@ Novo Cantico is a new layer just on top of Node.js, including:
 
 The very base layer of Novo Cantico is an unopinionated TypeScript runtime, with hot-reloading built in. This describes the 300 lines of code under [src/](https://github.com/sdegutis/Novo-Cantico/tree/main/src).
 
-* **TypeScript** in `app/` is translated by [sucrase](https://sucrase.io/), and compiled with [vm](https://nodejs.org/api/vm.html).
+* **TypeScript** code in `app/` is translated by [sucrase](https://sucrase.io/) and compiled with [vm](https://nodejs.org/api/vm.html).
 
 * **Runtime** support, implemented in [src/runtime.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/runtime.ts) and [src/filesys.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/filesys.ts)) makes this not only possible but also convenient (by adding globals `__dir` and `__file`).
 
@@ -89,13 +89,19 @@ There's nothing preventing you from calling out to a Postgres database, or a SQL
 
 ### A new (old) model layer
 
-TODO
+The simplest way to model anything is with a plain old JavaScript (TypeScript) object. This is the approach I've taken with my personal website. I'm still evolving this layer for my own needs, but so far, I have model objects which:
+
+1. Can handle loading/saving data to a file on disk
+2. Houses the "view" route for viewing this object in a public HTTP route
+3. Sometimes houses an "edit" route, if the model is editable from the site
+
+I should note here that this layer is not inherently a part of Novo Cantico per se, at least not yet. What I've written in this section is only what I've so far developed on my own personal website (which is basically a blog) per my needs.
 
 
 
-## Side-effects of all these
+## Implications of this new design
 
-Because the above layers are all orthogonal, they have many inherent advantages:
+Because the above layers are all orthogonal, they have many inherent advantages, but some of them are not very obvious or self-evident:
 
 
 
