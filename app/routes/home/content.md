@@ -24,7 +24,7 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 Novo Cantico is a new layer just on top of Node.js, including:
 
 * A new TypeScript runtime
-* A new router
+* A new HTTP router
 * A new JSX view layer
 * A new (old) database layer
 * A new (old) model layer
@@ -47,7 +47,7 @@ The runtime simply calls `app/main.{ts,tsx}` and lets you do whatever you want f
 
 
 
-### A new router
+### A new HTTP router
 
 Novo Cantico uses a push-based router, which maps routes (method & path) to TypeScript functions which provide a consistent response.
 
@@ -73,7 +73,17 @@ Check out the runtime-side implementation of JSX functionality at [app/core/jsx.
 
 ### A new (old) database layer
 
-TODO
+Most sites have extremely static data: it only changes when the site owner changes it, either through source code (for devs) or an admin panel (non-devs).
+
+When we have data that changes so seldom, we can load it into memory once, either on site-boot or when some of the data changes, and keep it in memory.
+
+Even when a site has many big images and hundreds of blog posts, this will usually not be too much memory for Node.js to handle.
+
+So the technique Novo Cantico adopted is to prefer using files from the repo itself (images, blog post Markdown files, whatever); to load them into memory when the runtime boots, parse them (if needed), and generate routes from them.
+
+My personal site loads over a thousand Markdown files totaling less than 1kb, and over a hundred image files totaling ~20kb, and Node.js can hold it all in memory just fine.
+
+There's nothing preventing you from calling out to a Postgres database, or a SQLite file, or an S3 bucket, and reading/writing any data as needed. For sites more dynamic than a personal site or blog, you'll probably still need to do this.
 
 
 
