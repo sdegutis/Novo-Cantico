@@ -29,7 +29,7 @@ You could say, the base layer of Novo Cantico is an unopinionated TypeScript run
 
 * **TypeScript compiler:** TypeScript code under `app/` is translated by [sucrase](https://sucrase.io/), and compiled into JavaScript functions by Node's own [vm module](https://nodejs.org/api/vm.html).
 
-* **Custom runtime:** This required a custom runtime, so I wrote one in [src/runtime.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/runtime.ts). It also adds `__dir` and `__file` objects to each TypeScript file, provided by [src/filesys.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/filesys.ts).
+* **Custom runtime:** This required a custom runtime, so I wrote one in [src/runtime.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/runtime.ts). It also adds extremely convenient `__dir` and `__file` objects to each TypeScript module, provided by [src/filesys.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/filesys.ts).
 
 * **Hot-reloading:** The [chokidar](https://www.npmjs.com/package/chokidar) library provides support for hot-reloading the runtime.
 
