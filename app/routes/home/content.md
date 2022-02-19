@@ -17,7 +17,7 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 ## What is Novo Cantico concretely?
 
-Novo Cantico is a new layer just on top of Node.js, including:
+Novo Cantico is a new backend TypeScript web framework, including:
 
 * [A new TypeScript runtime](#a-new-typescript-runtime)
 * [A new HTTP router](#a-new-http-router)
