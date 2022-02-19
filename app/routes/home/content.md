@@ -34,6 +34,12 @@ The design and interaction of these layers has several interesting implications:
 * [No markup language lock-in](#no-markup-language-lock-in)
 * [Pre-rendering is the default](#pre-rendering-is-the-default)
 
+When I use Novo Cantico to edit my own blog, it typically goes like this:
+
+* I open up VS Code and hit F5 to run my site locally
+* I make some changes or fix bugs, and make sure it works
+* I push via git, and in 1-2 seconds, the changes are live
+
 
 
 ### A new TypeScript runtime
