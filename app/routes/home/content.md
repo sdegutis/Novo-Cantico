@@ -34,7 +34,7 @@ The design and interaction of these layers has several interesting implications:
 * [No markup language lock-in](#no-markup-language-lock-in)
 * [Pre-rendering is the default](#pre-rendering-is-the-default)
 
-Some advantages of developing a site with Novo Cantico:
+Some more advantages of developing a site with Novo Cantico:
 
 * Edit in VS Code, with type checking, hot-reloading, and debugger support
 * Loading over 1,000 Markdown files and 20kb of images is instantaneous
