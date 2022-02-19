@@ -23,20 +23,20 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 Novo Cantico is a new layer just on top of Node.js, including:
 
-* A new TypeScript runtime
-* A new HTTP router
-* A new JSX view layer
-* A new (old) database layer
-* A new (old) model layer
+* [A new TypeScript runtime](#a-new-typescript-runtime)
+* [A new HTTP router](#a-new-http-router)
+* [A new JSX view layer](#a-new-jsx-view-layer)
+* [A new (old) database layer](#a-new-old-database-layer)
+* [A new (old) model layer](#a-new-old-model-layer)
 
 The orthogonality of these layers has several interesting implications:
 
-* Zero-downtime deployment
-* Userland asset pipelines
-* Free eternal-file-caching
-* Data can live next to code
-* No markup language lock-in
-* Pre-rendering is the default
+* [Zero-downtime deployment](#zero-downtime-deployment)
+* [Userland asset pipelines](#userland-asset-pipelines)
+* [Free eternal-file-caching](#free-eternal-file-caching)
+* [Data can live next to code](#data-can-live-next-to-code)
+* [No markup language lock-in](#no-markup-language-lock-in)
+* [Pre-rendering is the default](#pre-rendering-is-the-default)
 
 
 
