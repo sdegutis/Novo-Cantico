@@ -62,4 +62,12 @@ If you're concerned about performance, I can give a bit of anecdotal comfort her
 
 Check out [app/core/](https://github.com/sdegutis/Novo-Cantico/tree/main/app/core) to see how I implemented the router and server.
 
+### A new view layer with JSX
+
+All the previous view libraries seemed to be pointing to JSX: a natural expression of HTML in native TypeScript. Because it *is* TypeScript, it does not have to reimplement any wheels; it's completely orthogonal.
+
+Novo Cantico compiles JSX to `{ tag: string, attrs: object, children: any[] }`, so that you can do whatever you'd like with it. It's natural and simple to just render to a string, but there's also the freedom to render to server-side React or anything needed.
+
+One technique I found helpful is to create a function that scans a JSX tree for stylesheets and `<script`> tags, and hoists them up to the `<head>` element before sending to the browser.
+
 
