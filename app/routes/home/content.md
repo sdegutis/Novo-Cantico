@@ -48,7 +48,7 @@ Some more advantages of developing a site with Novo Cantico:
 
 ### A new TypeScript runtime
 
-The very base layer of Novo Cantico is an unopinionated TypeScript runtime, with hot-reloading built in. This describes the 300 lines of code under [src/](https://github.com/sdegutis/Novo-Cantico/tree/main/src).
+The very base layer of Novo Cantico is an unopinionated TypeScript runtime, with hot-reloading built in. This only describes the 300 lines of code under [src/](https://github.com/sdegutis/Novo-Cantico/tree/main/src).
 
 * **TypeScript** code in `app/` is translated by [sucrase](https://sucrase.io/) and compiled with [vm](https://nodejs.org/api/vm.html).
 
