@@ -3,7 +3,7 @@ import { Page } from "../../components/page/page";
 import { renderElement } from "../../core/jsx";
 import { addRouteable } from "../../core/router";
 import { markdown } from "../../util/markdown";
-import { Carattere } from "../fonts/carattere";
+import { DavidLibre } from "../fonts/davidlibre";
 
 const content = markdown.render(__dir.filesByName['content.md']!.buffer.toString('utf8'));
 
@@ -19,8 +19,8 @@ addRouteable({
       body: renderElement(<>
         <Page title="Novo Cantico">
           <NarrowContainer>
-            <Carattere.load />
-            <h1 style={`font-size:300%; font-family: ${Carattere.fontFamily}`}>Novo Cantico</h1>
+            <DavidLibre.load />
+            <h1 style={`font-size:300%; font-family: ${DavidLibre.fontFamily}`}>Novo Cantico</h1>
             <p><em>Finding a new harmony for web software from first principles.</em></p>
             <hr />
             {content}
