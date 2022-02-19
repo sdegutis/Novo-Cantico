@@ -28,8 +28,11 @@ Everything has a beginning and an end, a source and a destination. So I'll start
 You could say, the base layer of Novo Cantico is an unopinionated TypeScript runtime, with hot-reloading built in. But this only describes the 300 lines of code under [src/](https://github.com/sdegutis/Novo-Cantico/tree/main/src).
 
 * TypeScript code under `app/` is translated by [sucrase](https://sucrase.io/), and compiled into JavaScript functions by Node's own [vm module](https://nodejs.org/api/vm.html).
+
 * This required a custom runtime, so I wrote one in [src/runtime.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/runtime.ts). It also adds `__dir` and `__file` objects to each TypeScript file, provided by [src/filesys.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/filesys.ts).
+
 * The [chokidar](https://www.npmjs.com/package/chokidar) library provides support for hot-reloading the runtime.
+
 * Configuration files were set up to make sure it plays extremely nicely with VS Code, including full type checking, working auto-imports, and full VS Code debugging support.
 
 When a Novo Cantico web app is deployed, this base layer never changes, but when any files under `app/` change, the runtime can be reloaded from scratch, with in a fresh (globals) context. As a byproduct, this allows 0-downtime deployments.
