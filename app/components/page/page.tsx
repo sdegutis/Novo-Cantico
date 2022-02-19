@@ -29,12 +29,6 @@ const Head: JSX.Component<{ imagePath?: string, title?: string, description?: st
   </head>
 </>;
 
-const SiteFooter: JSX.Component<{}> = (attrs, children) => <>
-  <footer style='color:#999; text-align:center; margin:3em 1em'>
-    <a href="https://github.com/sdegutis/Novo-Cantico">GitHub Project Page</a>
-  </footer>
-</>;
-
 export const Page: JSX.Component<{
   title: string,
   description?: string,
@@ -50,7 +44,6 @@ export const Page: JSX.Component<{
       <main>
         {children}
       </main>
-      <SiteFooter />
     </body>
   </Html>
 </>;
