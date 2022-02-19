@@ -1,4 +1,4 @@
-import { Martel } from "../../routes/fonts/martel";
+import { Martel } from "../../fonts/martel";
 import { staticRouteFor } from "../../util/static";
 import fixExternalLinks from './fix-external-links.js';
 

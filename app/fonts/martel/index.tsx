@@ -1,4 +1,4 @@
-import { makeFontComponent } from "../../../util/css";
+import { makeFontComponent } from "../../util/css";
 
 export const Martel = {
   fontFamily: `'Martel', serif`,
