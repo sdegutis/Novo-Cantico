@@ -1,4 +1,4 @@
-import { Page } from "../../components/page";
+import { Page } from "../../components/page/page";
 import { renderElement } from "../../core/jsx";
 import { addRouteable } from "../../core/router";
 import { markdown } from "../../util/markdown";

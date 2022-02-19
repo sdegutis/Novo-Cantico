@@ -1,10 +1,15 @@
-import { inlineFontCss } from "../routes/fonts";
+import { inlineFontCss } from "../../routes/fonts";
+import { staticRouteFor } from "../../util/static";
 
 const Html: JSX.Component<{}> = (attrs, children) => <>
   {'<!DOCTYPE html>'}
   <html lang="en">
     {children}
   </html>
+</>;
+
+const Stylesheet: JSX.Component<{ src: string }> = (attrs, children) => <>
+  <link rel="stylesheet" href={attrs.src} />
 </>;
 
 const Head: JSX.Component<{ imagePath?: string, title?: string, description?: string | undefined }> = (attrs, children) => <>
@@ -16,6 +21,8 @@ const Head: JSX.Component<{ imagePath?: string, title?: string, description?: st
     <meta property="og:title" content={'Novo Cantico' + (attrs.title ? `: ${attrs.title}` : '')} />
     <meta property="og:locale" content="en_US" />
     <meta name="description" content={attrs.description ?? "Rethinking a new harmony for software from first principles"} />
+
+    <Stylesheet src={staticRouteFor(__dir.filesByName['page.css']!)} />
 
     <style>{inlineFontCss}</style>
 
