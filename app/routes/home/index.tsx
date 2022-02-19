@@ -19,6 +19,7 @@ addRouteable({
         <Page title="Novo Cantico">
           <NarrowContainer>
             <h1 style="font-family: 'Carattere', cursive;">Novo Cantico</h1>
+            <p><em>Finding a new harmony for web software from first principles.</em></p>
             <hr />
             {content}
             <hr />

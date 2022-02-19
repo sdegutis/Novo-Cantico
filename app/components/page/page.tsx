@@ -32,9 +32,7 @@ const Head: JSX.Component<{ imagePath?: string, title?: string, description?: st
 
 const SiteFooter: JSX.Component<{}> = (attrs, children) => <>
   <footer style='color:#999; text-align:center; margin:3em 1em'>
-    <p>
-      <a href="https://github.com/sdegutis/Novo-Cantico">GitHub Project Page</a>
-    </p>
+    <a href="https://github.com/sdegutis/Novo-Cantico">GitHub Project Page</a>
   </footer>
 </>;
 
