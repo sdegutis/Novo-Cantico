@@ -134,7 +134,7 @@ Because of our push-based approach, combined with a runtime that refreshes when 
 
 ### Data can live next to code
 
-For example, static images for a page do not need to be in a far away directory, connected only by having similar paths after a certain diversion. They can live in the same directory. And you can even get access to the image using `__dir`, and generate a static route for the image (see above), which you can place directly in the view for this page.
+For example, static images for a page do not need to be in a far away directory, only implicitly connected by having similar paths after a certain diversion in the path ancestry. They can live in the same directory. And you can even get access to the image file using `__dir.filesByName['image-big.jpg']`, and generate a static route for the image (see above), which you can place directly in the view for this page.
 
 And since code and data can live side by side, you can create helper functions to access this data. This is what Novo Cantico currently does to make it easy to use a custom web font in any component: see [app/fonts/martel/index.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/fonts/martel/index.tsx) for the creation of the Martel font, and [app/components/page/page.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/components/page/page.tsx#L40-L41) for where and how it's used.
 
