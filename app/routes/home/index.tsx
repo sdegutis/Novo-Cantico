@@ -17,7 +17,8 @@ addRouteable({
       },
       body: renderElement(<>
         <Page title="Novo Cantico">
-          <NarrowContainer style='margin-top: 3em'>
+          <NarrowContainer>
+            <h1 style='margin-bottom:0'>Novo Cantico</h1>
             {content}
           </NarrowContainer>
         </Page>

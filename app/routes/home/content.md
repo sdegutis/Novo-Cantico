@@ -1,7 +1,4 @@
 
-
-# Novo Cantico
-
 *Finding a new harmony for web software from first principles.*
 
 ---
