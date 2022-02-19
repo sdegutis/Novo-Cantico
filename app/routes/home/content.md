@@ -29,13 +29,6 @@ Novo Cantico is a new layer just on top of Node.js, including:
 * A new (old) database layer
 * A new (old) model layer
 
-It replaces the need for:
-
-* Express.js or other routers
-* View libraries (EJS, Handlebars, etc)
-* Database (kinda; see below)
-* ORM layers
-
 
 
 ### A new TypeScript runtime
