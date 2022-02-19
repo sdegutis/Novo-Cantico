@@ -18,6 +18,21 @@ This site serves three purposes:
 
 ## What is Novo Cantico concretely?
 
+Novo Cantico is a new layer just on top of Node.js, including:
+
+* A new TypeScript runtime
+* A new router
+* A new JSX view layer
+* A new database layer
+* A new (old) model layer
+
+It replaces the need for:
+
+* Express.js or other routers
+* Webpack or other bundlers
+* View libraries (EJS, Handlebars, etc)
+* Database or ORM layers
+
 ### A new TypeScript runtime
 
 The very base layer of Novo Cantico is an unopinionated TypeScript runtime, with hot-reloading built in. This describes the 300 lines of code under [src/](https://github.com/sdegutis/Novo-Cantico/tree/main/src).
@@ -42,7 +57,7 @@ Because routes in Novo Cantico are push-based, and independent of model objects 
 
 Check out [app/core/](https://github.com/sdegutis/Novo-Cantico/tree/main/app/core) to see how I implemented the router and server.
 
-### A new view layer with JSX
+### A new JSX view layer
 
 All the previous view libraries seemed to be pointing to JSX: a natural expression of hierarchical data in native TypeScript. Because it *is* TypeScript, it does not have to reimplement any wheels.
 
