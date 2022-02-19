@@ -7,7 +7,7 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 ## This site's three purposes:
 
-1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico), which is also the source code to the site you're on right now.
+1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in the form of this very website's source code, located in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico).
 
 2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions via this site, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
 
