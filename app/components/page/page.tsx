@@ -1,6 +1,6 @@
-import fixExternalLinks from './fix-external-links.js';
-import { inlineFontCss } from "../../routes/fonts";
+import { carattereFont } from "../../routes/fonts";
 import { staticRouteFor } from "../../util/static";
+import fixExternalLinks from './fix-external-links.js';
 
 const Html: JSX.Component<{}> = (attrs, children) => <>
   {'<!DOCTYPE html>'}
@@ -21,11 +21,10 @@ const Head: JSX.Component<{ imagePath?: string, title?: string, description?: st
     <title>{attrs.title && `${attrs.title} - `}Novo Cantico</title>
     <meta property="og:title" content={'Novo Cantico' + (attrs.title ? `: ${attrs.title}` : '')} />
     <meta property="og:locale" content="en_US" />
-    <meta name="description" content={attrs.description ?? "Rethinking a new harmony for software from first principles"} />
+    <meta name="description" content={attrs.description ?? "Finding a new harmony for web software from first principles"} />
 
     <Stylesheet src={staticRouteFor(__dir.filesByName['page.css']!)} />
-
-    <style>{inlineFontCss}</style>
+    <Stylesheet src={staticRouteFor(carattereFont)} />
 
     {children}
   </head>

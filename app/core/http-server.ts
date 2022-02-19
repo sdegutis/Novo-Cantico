@@ -2,7 +2,7 @@ import 'dotenv/config';
 import * as http from "http";
 import 'source-map-support/register';
 
-const baseUrl = process.env['BASE_URL']!;
+export const baseUrl = process.env['BASE_URL']!;
 
 export class Server {
 
