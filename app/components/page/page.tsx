@@ -1,3 +1,4 @@
+import { Martel } from "../../routes/fonts/martel";
 import { staticRouteFor } from "../../util/static";
 import fixExternalLinks from './fix-external-links.js';
 
@@ -41,6 +42,10 @@ export const Page: JSX.Component<{
   <Html>
     <Head title={attrs.title} description={attrs.description} />
     <body>
+
+      <Martel.load />
+      <style>{`html { font-family: ${Martel.fontFamily} }`}</style>
+
       <script src={staticRouteFor(fixExternalLinks)} defer />
       <main>
         {children}
