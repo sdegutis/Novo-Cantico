@@ -1,16 +1,16 @@
 html {
   font-size: 14px;
   color: #333;
-  --border-color: #d3dde8;
   --bold-color: #000;
+  --header-color: #000;
 }
 
 @media (prefers-color-scheme:dark) {
   html {
     background: #111;
     color: #ccc;
-    --border-color: #2d343c;
     --bold-color: #fff;
+    --header-color: #fff;
   }
 }
 
@@ -30,18 +30,16 @@ h1, h2, h3, h4 {
   margin-top: 3em;
 }
 
-h1, h2, h3, h4, h5, h6, b, strong {
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+}
+
+b, strong {
   color: var(--bold-color);
 }
 
 a {
   color: #19f;
-}
-
-hr {
-  height: 1px;
-  background-color: var(--border-color);
-  border: 0;
 }
 
 ul, ol {
