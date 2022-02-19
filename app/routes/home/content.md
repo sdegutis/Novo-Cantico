@@ -29,6 +29,13 @@ Novo Cantico is a new layer just on top of Node.js, including:
 * A new (old) database layer
 * A new (old) model layer
 
+The orthogonality of these layers has several interesting implications:
+
+* Zero-downtime deployment
+* Userland asset pipelines
+* Free eternal-file-caching
+* Data can live next to code
+
 
 
 ### A new TypeScript runtime
@@ -89,13 +96,13 @@ There's nothing preventing you from calling out to a Postgres database, or a SQL
 
 ### A new (old) model layer
 
+I should note here that this layer is not inherently a part of Novo Cantico per se, at least not yet. What I've written in this section is only what I've so far developed on my own personal website (which is basically a blog) per my needs.
+
 The simplest way to model anything is with a plain old JavaScript (TypeScript) object. This is the approach I've taken with my personal website. I'm still evolving this layer for my own needs, but so far, I have model objects which:
 
 1. Can handle loading/saving data to a file on disk
 2. Houses the "view" route for viewing this object in a public HTTP route
 3. Sometimes houses an "edit" route, if the model is editable from the site
-
-I should note here that this layer is not inherently a part of Novo Cantico per se, at least not yet. What I've written in this section is only what I've so far developed on my own personal website (which is basically a blog) per my needs.
 
 
 
@@ -108,3 +115,23 @@ Because the above layers are all orthogonal, they have many inherent advantages,
 ### Zero-downtime deployment
 
 When a Novo Cantico web app is deployed, the base layer watches files under `app/` for changes. When it sees any change that can't be handled by the runtime itself, it shuts down the runtime and creates a new one. This essentially allows 0-downtime deployments.
+
+
+
+### Userland asset pipelines
+
+Because the server lives in userland, and all our responses always have a body of type `Buffer`, the concept of "asset pipelines" is moved into `app/` where we have complete control over integration with the rest of the site.
+
+
+
+### Free eternal-file-caching
+
+Because of our push-based approach, combined with a runtime that refreshes when data changes on disk, we can take our data files (images, fonts, etc), and create eternally-cached routes for them, getting the route back while still having access to our view-layer where we can use them. See [app/util/static.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/util/static.ts) for how this is implemented in Novo Cantico. See also [app/util/css.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/util/css.tsx) and [app/fonts](https://github.com/sdegutis/Novo-Cantico/tree/main/app/fonts) for how this is implemented to serve web fonts efficiently.
+
+
+
+### Data can live next to code
+
+For example, static images for a page do not need to be in a far away directory, connected only by having similar paths after a certain diversion. They can live in the same directory. And you can even get access to the image using `__dir`, and generate a static route for the image (see above), which you can place directly in the view for this page.
+
+And since code and data can live side by side, you can create helper functions to access this data. This is what Novo Cantico currently does to make it easy to use a custom web font in any component: see [app/fonts/martel/index.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/fonts/martel/index.tsx) for the creation of the Martel font, and [app/components/page/page.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/components/page/page.tsx#L40-L41) for where and how it's used.
