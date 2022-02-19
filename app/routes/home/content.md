@@ -9,7 +9,7 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico), which is also the source code to the site you're on right now.
 
-2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions on this page, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
+2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions via this site, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
 
 3. **Offer my services:** My name is [Steven Degutis](https://sdegutis.github.io/), and I'm an independent software consultant with 10 years of professional software engineering experience, and another 10 of hobbyist software experience before that. I'm available for hire, feel free to [send me an email](mailto:sbdegutis+novocantico@gmail.com). You can also [sponsor me on GitHub](https://github.com/sponsors/sdegutis) to enable me to spend more time developing Novo Cantico.
 
@@ -34,11 +34,11 @@ The design and interaction of these layers has several interesting implications:
 * [No markup language lock-in](#no-markup-language-lock-in)
 * [Pre-rendering is the default](#pre-rendering-is-the-default)
 
-When I use Novo Cantico to edit my own blog, it typically goes like this:
+Some advantages of developing a site with Novo Cantico:
 
-* I open up VS Code and hit F5 to run my site locally
-* I make some changes or fix bugs, and make sure it works
-* I push via git, and in 1-2 seconds, the changes are live
+* Edit locally in VS Code, with hot-loading and debugger support
+* Loading 1000+ data files and 20kb of images is instantaneous
+* Pushing changes via git takes 1-2 seconds to go live, with 0-downtime
 
 
 
