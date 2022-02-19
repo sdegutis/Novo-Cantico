@@ -1,4 +1,4 @@
-import { Page } from "../components/core";
+import { Page } from "../components/page";
 import { renderElement } from "../core/jsx";
 import { addRouteable } from "../core/router";
 
