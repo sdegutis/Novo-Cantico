@@ -1,3 +1,4 @@
+import { Page } from "../components/core";
 import { renderElement } from "../core/jsx";
 import { addRouteable } from "../core/router";
 
@@ -11,9 +12,9 @@ addRouteable({
         'Content-Type': 'text/html',
       },
       body: renderElement(<>
-        <html>
-          Support via <a href='https://www.patreon.com/novocantico'>Patreon</a>
-        </html>
+        <Page title="Novo Cantico">
+          Coming soon.
+        </Page>
       </>),
     };
   }
