@@ -37,7 +37,9 @@ The design and interaction of these layers has several interesting implications:
 Some more advantages of developing a site with Novo Cantico:
 
 * Edit in VS Code, with type checking, hot-reloading, and debugger support
+
 * Loading over 1,000 Markdown files and 20kb of images is instantaneous
+
 * Pushing changes via git takes 1-2 seconds to go live, with 0-downtime
 
 
