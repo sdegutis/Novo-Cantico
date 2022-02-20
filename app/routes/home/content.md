@@ -70,19 +70,7 @@ For example, you might set the key `GET /` to the landing page handler. Or you m
 
 Because routes in Novo Cantico are push-based, and independent of model objects or anything else, you have the freedom to decide how you want to generate routes. One technique I found helpful has been to create model objects, and store route handler objects on them, so that you can access the route's path directly and use it in links.
 
-The server and router are implemented and used in these files:
-
-* [app/core/globals.d.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/core/globals.d.ts) has the types common for all route handlers
-
-* [app/core/http-server.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/core/http-server.ts) has the base web server (using Node's own [http](https://nodejs.org/api/http.html))
-
-* [app/core/route-handler.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/core/route-handler.ts) has the higher-level route handler using our types
-
-* [app/core/router.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/core/router.ts) has the code where you push routes
-
-* [app/main.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/main.ts) creates the server and sets the handler during runtime boot
-
-* [app/routes/home/index.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/routes/home/index.tsx) is the source code to the page you're reading
+The server and router are implemented in the various files in [app/core](https://github.com/sdegutis/Novo-Cantico/tree/main/app/core). Two sample usages are [app/routes/home/index.tsx](https://github.com/sdegutis/Novo-Cantico/blob/main/app/routes/home/index.tsx) containing the source code to the page you're reading, and [app/util/static.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/util/static.ts) which serves cached static files (including ones used by this page---check the Network tab in your browser's dev tools).
 
 
 
