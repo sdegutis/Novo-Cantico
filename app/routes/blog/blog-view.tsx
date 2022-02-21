@@ -27,7 +27,7 @@ export class ViewBlogPage implements Routeable {
         <Page title="Novo Cantico">
           <NavBar />
           <NarrowContainer style='margin-bottom:7em'>
-            <h1>{this.post.title}</h1>
+            <h1><a href={this.route}>{this.post.title}</a></h1>
             <p><i>Posted on {this.post.date.toLocaleString()}</i></p>
             {this.post.content}
             <p><ViewSourceLink file={this.post.file}>View this blog post's source</ViewSourceLink></p>

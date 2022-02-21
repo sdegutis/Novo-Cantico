@@ -19,7 +19,7 @@ export const blogIndexPage: Routeable = {
         <Page title="Novo Cantico">
           <NavBar />
           <NarrowContainer style='margin-bottom:7em'>
-            <h2>All blog posts</h2>
+            <h2><a href={blogIndexPage.route}>All blog posts</a></h2>
             <ul>
               {blogPosts.map(post => <>
                 <li>
