@@ -18,7 +18,7 @@ export const advantagesPage: Routeable = {
         'Content-Type': 'text/html',
       },
       body: renderElement(<>
-        <Page title="Novo Cantico">
+        <Page title="Advantages">
           <NavBar />
           <NarrowContainer style='margin-bottom:7em'>
             {content}

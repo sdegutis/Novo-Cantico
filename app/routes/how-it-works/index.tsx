@@ -18,7 +18,7 @@ export const howItWorksPage: Routeable = {
         'Content-Type': 'text/html',
       },
       body: renderElement(<>
-        <Page title="Novo Cantico">
+        <Page title="How it works">
           <NavBar />
           <NarrowContainer style='margin-bottom:7em'>
             {content}

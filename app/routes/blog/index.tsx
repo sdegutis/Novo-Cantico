@@ -16,7 +16,7 @@ export const blogIndexPage: Routeable = {
         'Content-Type': 'text/html',
       },
       body: renderElement(<>
-        <Page title="Novo Cantico">
+        <Page title="Blog posts">
           <NavBar />
           <NarrowContainer style='margin-bottom:7em'>
             <h2><a href={blogIndexPage.route}>All blog posts</a></h2>
