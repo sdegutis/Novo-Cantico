@@ -1,6 +1,8 @@
 import { baseUrl } from "../../core/http-server";
 import { Martel } from "../../fonts/martel";
 import { staticRouteFor } from "../../util/static";
+import { NarrowContainer } from "../narrow-container/container";
+import { ViewSourceLink } from "../view-source/view-source";
 import fixExternalLinks from './fix-external-links.js';
 
 const Html: JSX.Component<{}> = (attrs, children) => <>
@@ -46,6 +48,9 @@ export const Page: JSX.Component<{
       }))} defer />
       <main>
         {children}
+        <NarrowContainer style='margin-bottom:3em'>
+          <p><ViewSourceLink file={__file}>View Page component's source</ViewSourceLink></p>
+        </NarrowContainer>
       </main>
     </body>
   </Html>

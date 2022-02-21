@@ -8,9 +8,9 @@ import { markdown } from "../../util/markdown";
 
 const content = markdown.render(__dir.filesByName['content.md']!.buffer.toString('utf8'));
 
-export const landingPage: Routeable = {
+export const howItWorksPage: Routeable = {
   method: 'GET',
-  route: '/',
+  route: '/how-it-works',
   handle: (input) => {
     return {
       status: 200,
@@ -30,4 +30,4 @@ export const landingPage: Routeable = {
   }
 };
 
-addRouteable(landingPage);
+addRouteable(howItWorksPage);

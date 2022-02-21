@@ -1,0 +1,12 @@
+#site-navbar {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  justify-content: start;
+  align-items: center;
+  margin: 1em 0;
+}
+
+#site-navbar a {
+  color: var(--header-color);
+}
