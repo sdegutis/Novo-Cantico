@@ -1,5 +1,6 @@
 ---
 title: Setting up your Novo Cantico website
+image: Photo by <a href="https://unsplash.com/@barkiple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Barkiple</a> on <a href="https://unsplash.com/s/photos/wires?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 If you wanted to set up "example.com":
