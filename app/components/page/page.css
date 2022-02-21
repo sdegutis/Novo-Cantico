@@ -2,7 +2,8 @@ html {
   font-size: 14px;
   color: #333;
   --bold-color: #000;
-  --header-color: #000;
+  --header-color: #0074cb;
+  --link-color: var(--bold-color);
 }
 
 @media (prefers-color-scheme:dark) {
@@ -10,7 +11,8 @@ html {
     background: #111;
     color: #ccc;
     --bold-color: #fff;
-    --header-color: #fff;
+    --header-color: #19f;
+    --link-color: var(--bold-color);
   }
 }
 
@@ -39,7 +41,7 @@ b, strong {
 }
 
 a {
-  color: #19f;
+  color: var(--link-color);
 }
 
 ul, ol {
