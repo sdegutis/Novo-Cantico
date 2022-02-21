@@ -28,6 +28,14 @@ When APIs are designed with very clear and minimal inputs and outputs, they beco
 
 For example, the only `body` type allowed by Novo Cantico is `Buffer`, which is the lowest common denominator. Because of this, helper functions can be written that take a buffer and can transform it, or which transform higher data types (like JSX or strings) into buffers. This enables a very stable ecosystem.
 
+### Pre-computation is better than on-demand computation
+
+*Coming soon...*
+
+### Composition should be preferred stack-wide
+
+*Coming soon...*
+
 ### More coming soon...
 
 Even though I've had dozens of realizations about Novo Cantico's innovations and pricinples during the 3 months in which I developed it, I never actually wrote any of them down.
