@@ -1,6 +1,6 @@
 #site-navbar {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1em;
   justify-content: start;
   align-items: center;
