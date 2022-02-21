@@ -1,3 +1,4 @@
+import { LatestPosts } from "../../components/latest-posts/latest-posts";
 import { NarrowContainer } from "../../components/narrow-container/container";
 import { NavBar } from "../../components/navbar/navbar";
 import { Page } from "../../components/page/page";
@@ -22,6 +23,7 @@ export const howItWorksPage: Routeable = {
           <NavBar />
           <NarrowContainer style='margin-bottom:7em'>
             {content}
+            <LatestPosts />
             <p><ViewSourceLink file={__file}>View this page's source</ViewSourceLink></p>
           </NarrowContainer>
         </Page>

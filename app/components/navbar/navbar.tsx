@@ -1,5 +1,4 @@
 import { advantagesPage } from "../../routes/advantages";
-import { blogIndexPage } from "../../routes/blog/index";
 import { landingPage } from "../../routes/home";
 import { howItWorksPage } from "../../routes/how-it-works";
 import { staticRouteFor } from "../../util/static";
@@ -14,7 +13,6 @@ export const NavBar: JSX.Component<{}> = (attrs, children) => <>
       <a href={landingPage.route}>Novo Cantico</a>
       <a href={howItWorksPage.route}>How it works</a>
       <a href={advantagesPage.route}>Advantages</a>
-      <a href={blogIndexPage.route}>Blog posts</a>
       <a href='https://github.com/sdegutis/Novo-Cantico'>GitHub repo</a>
       <iframe src="https://github.com/sponsors/sdegutis/button" title="Sponsor sdegutis" height="35" width="116" style="border: 0;"></iframe>
     </nav>
