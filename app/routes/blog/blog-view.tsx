@@ -5,7 +5,7 @@ import { ViewSourceLink } from "../../components/view-source/view-source";
 import { renderElement } from "../../core/jsx";
 import { addRouteable, Routeable, RouteMethod } from "../../core/router";
 import { BlogPost } from "../../model/blog/post";
-import { blogIndexPage } from "./blog-index";
+import { blogIndexPage } from "./index";
 
 export class ViewBlogPage implements Routeable {
 

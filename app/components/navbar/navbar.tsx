@@ -1,6 +1,6 @@
-import { blogIndexPage } from "../../routes/blog/blog-index";
+import { blogIndexPage } from "../../routes/blog/index";
 import { landingPage } from "../../routes/home";
-import { howItWorksPage } from "../../routes/how-it-works/how-it-works";
+import { howItWorksPage } from "../../routes/how-it-works";
 import { staticRouteFor } from "../../util/static";
 import { NarrowContainer } from "../narrow-container/container";
 import { Stylesheet } from "../page/page";
