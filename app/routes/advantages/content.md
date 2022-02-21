@@ -14,19 +14,19 @@ The design and interaction of these layers has several interesting implications:
 
 * [Pre-rendering is the default](#pre-rendering-is-the-default)
 
-Some more advantages of developing a site with Novo Cantico:
+* [Deeply integrated IDE support](#deeply-integrated-ide-support)
 
-* Edit in VS Code, with type checking, hot-reloading, and debugger support
+* [Hot-reloading is practicaly instant](#hot-reloading-is-practicaly-instant)
 
-* Loading over 1,000 Markdown files and 20kb of images is instantaneous
-
-* Pushing changes via git takes 1-2 seconds to go live, with 0-downtime
+* [Deploying is practically instant](#deploying-is-practically-instant)
 
 
 
 ### Zero-downtime deployment
 
-When a Novo Cantico web app is deployed, the base layer watches files under `app/` for changes. When it sees any change that can't be handled by the runtime itself, it shuts down the runtime and creates a new one. This essentially allows 0-downtime deployments.
+Because a Novo Cantico production site is exactly the same as a local development site, the same hot-reloading principle applies for deploying to production: simply make the source code files change on the production server however you want, e.g. pushing from GitHub, or directly via ssh.
+
+Using the `??=` operator, the HTTP server is created only once when your app starts up. During any hot-reloads, only the request handler is recreated. This effectively means 0-downtime deployments whenever source files change on your production server.
 
 
 
@@ -65,3 +65,30 @@ This allows you to grab the contents of your file, parse it in any language you 
 Because the runtime loads your `main` module, and lets you set up your own server and its routes, this enables and even encourages you to do as much data-processing ahead of time as you can.
 
 One technique which I use, and will implement shortly in the Novo Cantico site (when the blog is set up) is to create an array of blog posts on boot, populate it with BlogPost objects which each have their own route, render the markdown and the excerpt, and create the static routes for the big and small blog post images; all of this happening before a single route is even requested by a user.
+
+
+
+### Deeply integrated IDE support
+
+Because the runtime lives entirely in memory, and is under our control, it only took a little while to come up with configuration files that made it play perfectly well with VS Code and the TypeScript compiler. This means you get tons of typical TypeScript + VS Code features for free:
+
+* Complete type-checking with comprehensive IDE support
+* Full debugger support with ordinary breakpoints
+* Use the IDE to organize your files even though they live in memory
+* All file changes are reflected instantly during hot-reloading
+
+
+
+### Hot-reloading is practicaly instant
+
+On my personal website (which is basically a complex blog), loading over 1,000 Markdown files and 20kb of images is nearly instantaneous. I can't refresh the browser as fast as it loads when I save a file during local development. It seems to take 1-2 seconds *at most*.
+
+This is gained by having the runtime live in a simple VM object using Node's own built-in vm module, and recreating a new one whenever the file watcher sees your changes. Apparently loading a thousand files from disk, parsing them as YAML and Markdown, and creating a new VM, is not actually very expensive.
+
+
+
+### Deploying is practically instant
+
+Because the production website is *exactly the same* as the local development website (the only exception being the ENV variable `BASE_URL`), all the advantages of hot-reloading work in production also.
+
+Which means, if you set up your deployment strategy to somehow push or pull changes from GitHub into your production site, deployment takes 1-2 seconds *at most*, just like in local development.
