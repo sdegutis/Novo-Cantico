@@ -41,7 +41,7 @@ b, strong {
 }
 
 a {
-  color: var(--link-color);
+  color: inherit;
 }
 
 ul, ol {
@@ -54,7 +54,6 @@ ul, ol {
   border-bottom: 1px dashed currentColor;
 }
 
-li>a {
-  color: inherit;
+li a {
   text-decoration-style: dotted;
 }

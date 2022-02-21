@@ -3,18 +3,27 @@
 Novo Cantico is a new set of backend TypeScript web technologies, including:
 
 * [A new TypeScript runtime](#a-new-typescript-runtime)
+
 * [A new HTTP router](#a-new-http-router)
+
 * [A new JSX view layer](#a-new-jsx-view-layer)
+
 * [A new (old) database layer](#a-new-old-database-layer)
+
 * [A new (old) model layer](#a-new-old-model-layer)
 
 The design and interaction of these layers has several interesting implications:
 
 * [Zero-downtime deployment](#zero-downtime-deployment)
+
 * [Userland asset pipelines](#userland-asset-pipelines)
+
 * [Free eternal-file-caching](#free-eternal-file-caching)
+
 * [Data can live next to code](#data-can-live-next-to-code)
+
 * [No markup language lock-in](#no-markup-language-lock-in)
+
 * [Pre-rendering is the default](#pre-rendering-is-the-default)
 
 Some more advantages of developing a site with Novo Cantico:
