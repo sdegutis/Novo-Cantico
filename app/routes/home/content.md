@@ -14,9 +14,9 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 1. **Share what I made:** In early December 2021, I began to rewrite my website using brand new techniques, trying to solve many problems with modern web development. I finally ended up with code I think will be valuable to the greater software community, so I'm gradually open sourcing it in the form of this very website's source code, located in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico).
 
-2. **Explain how it works:** Many of the concepts are so new or different that their implications are not always self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of my technical decisions via this site, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
+2. **Explain how it works:** Many of the concepts developed in Novo Cantico have implications that are not self-evident. And some of them are so counter to conventional wisdom that I am sure to receive critical feedback. I intend to explain and justify each of Novo Cantico's technical decisions via this site, so that anyone can reuse the same principles and patterns, and feel confident in doing so.
 
-3. **Offer my services:** My name's Steven, I'm an independent software consultant with over a decade of experience. I'm available for hire, [email me](mailto:sbdegutis+novocantico@gmail.com) and let's talk. You can also sponsor me on GitHub to enable me to spend more time developing Novo Cantico.
+3. **Offer my services:** I'm Steven, an independent software consultant with over a decade of experience. I'm currently available for hire, [email me](mailto:sbdegutis+novocantico@gmail.com) and let's talk. You can also sponsor me on GitHub to enable me to spend more time developing Novo Cantico.
 
 
 
