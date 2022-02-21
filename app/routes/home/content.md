@@ -13,3 +13,17 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 2. **Explain how it works:** Many of the concepts developed in Novo Cantico have very useful implications, but which are not always obvious. On this site I will explain how the new web software techniques of Novo Cantico work, and their various practical benefits.
 
 3. **Offer my services:** I'm Steven, an independent software consultant with over a decade of experience. I'm currently available for hire, [email me](mailto:sbdegutis+novocantico@gmail.com) and let's talk. You can also sponsor me on GitHub to enable me to spend more time developing Novo Cantico.
+
+
+
+## Principles behind Novo Cantico
+
+### Use existing ecosystem
+
+TypeScript and VS Code already provide a phenomenal development experience. Novo Cantico builds on this by creating a new runtime with deeply integrated TypeScript and VS Code support, to make local development extremely fast and easy.
+
+### Use fundamental inputs/outputs in APIs
+
+When APIs are designed with very clear and minimal inputs and outputs, they become very easy to write helper functions against, and even libraries, while ensuring that they all work well with each other.
+
+For example, the only `body` type allowed by Novo Cantico is `Buffer`, which is the lowest common denominator. Because of this, helper functions can be written that take a buffer and can transform it, or which transform higher data types (like JSX or strings) into buffers. This enables a very stable ecosystem.
