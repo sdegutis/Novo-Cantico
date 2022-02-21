@@ -1,6 +1,6 @@
 import { advantagesPage } from "../../routes/advantages";
+import { comparisonsPage } from "../../routes/comparisons";
 import { landingPage } from "../../routes/home";
-import { howItWorksPage } from "../../routes/how-it-works";
 import { staticRouteFor } from "../../util/static";
 import { NarrowContainer } from "../narrow-container/container";
 import { Stylesheet } from "../page/page";
@@ -11,11 +11,11 @@ export const NavBar: JSX.Component<{}> = (attrs, children) => <>
   <NarrowContainer>
     <nav id='site-navbar'>
       <a href={landingPage.route}>Novo Cantico</a>
-      <a href={howItWorksPage.route}>How it works</a>
-      <a href={advantagesPage.route}>Advantages</a>
-      <a href='https://github.com/sdegutis/Novo-Cantico'>GitHub repo</a>
-      <iframe src="https://github.com/sponsors/sdegutis/button" title="Sponsor sdegutis" height="35" width="116" style="border: 0;"></iframe>
+      {/* <a href={comparisonsPage.route}>Comparisons</a>
+      <a href={advantagesPage.route}>Advantages</a> */}
+      <a href='https://github.com/sdegutis/Novo-Cantico'>GitHub</a>
+      <a href='https://github.com/sponsors/sdegutis?o=esb'>Sponsor</a>
     </nav>
-    <p><ViewSourceLink file={__file}>View nav-bar's source</ViewSourceLink></p>
+    <p><ViewSourceLink file={__file}>View navbar's source</ViewSourceLink></p>
   </NarrowContainer>
 </>;

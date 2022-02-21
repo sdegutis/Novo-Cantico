@@ -1,4 +1,19 @@
-## What is Novo Cantico concretely?
+
+## Comparison to Express.js
+
+Express uses an on-demand router. Novo Cantico uses a push-based router, where all routes are generated ahead of time, like a static site generator.
+
+In Express, you would route `/posts/:id.html` and do a DB lookup for *every possible user-provided value*, even when they're nonsense.
+
+In Novo Cantico, for each blog post, you would map the route `/posts/${this.post.date}-${this.post.slug}.html` on a handler function or object.
+
+
+## Comparison to React
+
+JSX is unrelated to React, and Novo Cantico uses JSX on the server-side to render components. You can still use React with Novo Cantico if you want, but you might find your site is now fast enough that you don't need to.
+
+
+<!-- ## What is Novo Cantico concretely?
 
 Novo Cantico is a new set of backend TypeScript web technologies, including:
 
@@ -80,4 +95,4 @@ The simplest way to model anything is with a plain old JavaScript (TypeScript) o
 
 1. Can handle loading/saving data to a file on disk
 2. Houses the "view" route for viewing this object in a public HTTP route
-3. Sometimes houses an "edit" route, if the model is editable from the site
+3. Sometimes houses an "edit" route, if the model is editable from the site -->

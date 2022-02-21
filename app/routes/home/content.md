@@ -1,4 +1,25 @@
-## The Philosophy of Novo Cantico
+
+# Novo Cantico
+
+Novo Cantico is a new TypeScript backend web framework with:
+
+* A new push-based router
+* Server-side JSX components
+* Deep VS Code support
+* Instant hot-reloading locally
+* Instant hot-reloading in production
+* Zero-downtime deployment
+* Automatic static file caching
+* Pre-rendering built in
+* Content-language freedom
+
+This site is brand new, check back regularly as content develops.
+
+I'm also available for hire, [email me](mailto:sbdegutis@gmail.com) and let's talk.
+
+
+
+<!-- ## The Philosophy of Novo Cantico
 
 "Novo Cantico" is taken from the 13th century hymn, [Puer natus in Bethlehem](https://www.youtube.com/watch?v=A1k5YTmxIVc&t=2573s), and means "a new song". Software and music are both rooted in principles and patterns; both are arts and sciences; both reflect a beauty, harmony, and order that's visible only to the mind, but which have a very real effect on our lives.
 
@@ -42,4 +63,4 @@ Even though I've had dozens of realizations about Novo Cantico's innovations and
 
 So as I wrote this site using Novo Cantico, I've just been going through all that it does and can do, remember everything that's new or interesting about it, and write it all down in the various pages here. Which means this whole site is really an incomplete WIP of Novo Cantico's documentation.
 
-My plan is to simplify the pages here, and move most of each page's content into blog posts that are referenced by that section, which then really becomes a short description of it. So follow the [blog posts](/blog) and you'll be up to date.
+My plan is to simplify the pages here, and move most of each page's content into blog posts that are referenced by that section, which then really becomes a short description of it. So follow the [blog posts](/blog) and you'll be up to date. -->

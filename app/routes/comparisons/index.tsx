@@ -9,7 +9,7 @@ import { markdown } from "../../util/markdown";
 
 const content = markdown.render(__dir.filesByName['content.md']!.buffer.toString('utf8'));
 
-export const howItWorksPage: Routeable = {
+export const comparisonsPage: Routeable = {
   method: 'GET',
   route: '/how-it-works',
   handle: (input) => {
@@ -19,7 +19,7 @@ export const howItWorksPage: Routeable = {
         'Content-Type': 'text/html',
       },
       body: renderElement(<>
-        <Page title="How it works">
+        <Page title="Comparisons">
           <NavBar />
           <NarrowContainer style='margin-bottom:7em'>
             {content}
@@ -32,4 +32,4 @@ export const howItWorksPage: Routeable = {
   }
 };
 
-addRouteable(howItWorksPage);
+// addRouteable(comparisonsPage);

@@ -32,4 +32,4 @@ export const advantagesPage: Routeable = {
   }
 };
 
-addRouteable(advantagesPage);
+// addRouteable(advantagesPage);
