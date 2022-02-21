@@ -31,11 +31,11 @@ Some more advantages of developing a site with Novo Cantico:
 
 The very base layer of Novo Cantico is an unopinionated TypeScript runtime, with hot-reloading built in. This only describes the 300 lines of code under [src/](https://github.com/sdegutis/Novo-Cantico/tree/main/src).
 
-* **TypeScript** code in `app/` is translated by [sucrase](https://sucrase.io/) and compiled with [vm](https://nodejs.org/api/vm.html).
+* **TypeScript** code in `app/` is compiled in-memory, using [sucrase](https://sucrase.io/) and [vm](https://nodejs.org/api/vm.html).
 
-* **Runtime** support, implemented in [src/runtime.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/runtime.ts) and [src/filesys.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/src/filesys.ts)) makes this not only possible but also convenient (by adding globals `__dir` and `__file`).
+* **Runtime** is just a VM object, with the convenient globals `__dir` and `__file`.
 
-* **Hot-reloading** is done by [chokidar](https://www.npmjs.com/package/chokidar) which watches the whole `app/` tree.
+* **Hot-reloading** is done by [chokidar](https://www.npmjs.com/package/chokidar) watching `app/**` and reloading the VM.
 
 * **VS Code support**, including full type checking, working auto-imports, and full VS Code debugging support, is gained through carefully crafted config files.
 
