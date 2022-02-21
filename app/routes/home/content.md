@@ -1,3 +1,6 @@
+# Novo Cantico
+
+<iframe src="https://github.com/sponsors/sdegutis/button" title="Sponsor sdegutis" height="35" width="116" style="border: 0; margin-bottom: 7px"></iframe>
 
 ## The Philosophy of Novo Cantico
 
