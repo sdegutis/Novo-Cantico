@@ -27,3 +27,11 @@ TypeScript and VS Code already provide a phenomenal development experience. Novo
 When APIs are designed with very clear and minimal inputs and outputs, they become very easy to write helper functions against, and even libraries, while ensuring that they all work well with each other.
 
 For example, the only `body` type allowed by Novo Cantico is `Buffer`, which is the lowest common denominator. Because of this, helper functions can be written that take a buffer and can transform it, or which transform higher data types (like JSX or strings) into buffers. This enables a very stable ecosystem.
+
+### More coming soon...
+
+Even though I've had dozens of realizations about Novo Cantico's innovations and pricinples during the 3 months in which I developed it, I never actually wrote any of them down.
+
+So as I wrote this site using Novo Cantico, I've just been going through all that it does and can do, remember everything that's new or interesting about it, and write it all down in the various pages here. Which means this whole site is really an incomplete WIP of Novo Cantico's documentation.
+
+My plan is to simplify the pages here, and move most of each page's content into blog posts that are referenced by that section, which then really becomes a short description of it. So follow the [blog posts](/blog) and you'll be up to date.
