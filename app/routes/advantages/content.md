@@ -64,7 +64,9 @@ This allows you to grab the contents of your file, parse it in any language you 
 
 Because the runtime loads your `main` module, and lets you set up your own server and its routes, this enables and even encourages you to do as much data-processing ahead of time as you can.
 
-One technique which I use, and will implement shortly in the Novo Cantico site (when the blog is set up) is to create an array of blog posts on boot, populate it with BlogPost objects which each have their own route, render the markdown and the excerpt, and create the static routes for the big and small blog post images; all of this happening before a single route is even requested by a user.
+One technique which I use is to create an array of blog posts on boot, populate it with BlogPost objects which each have their own route, render the markdown and the excerpt, and create the static routes for the big and small blog post images; all of this happening before a single route is even requested by a user.
+
+This site's blog post system is an example of this: in [app/model/blog/post.ts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/model/blog/post.ts), Markdown content is rendered immediately when the object is constructed, which happens during the runtime reload.
 
 
 
