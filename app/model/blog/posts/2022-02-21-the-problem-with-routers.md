@@ -1,3 +1,7 @@
+---
+title: The problem with routers
+---
+
 There were several problems with existing routing techniques:
 
 1. I don't want my public routes to have to be tied to where my source code is stored in the local filesystem. That makes it hard for me to organize my project.

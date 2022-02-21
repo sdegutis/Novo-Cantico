@@ -2,6 +2,9 @@ import 'source-map-support/register';
 import { makeRequestHandler, Server } from "./core/http-server";
 import { makeRouteHandler } from './core/route-handler';
 import { loadRoutes } from './core/router';
+import { loadModels } from './model/load';
+
+loadModels();
 
 for (const routeDir of __dir.dirsByName['routes']!.dirs) {
   const indexFile = routeDir.find('index');

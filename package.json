@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/sdegutis/Novo-Cantico#readme",
   "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@types/luxon": "^2.0.9",
     "@types/markdown-it": "^12.2.3",
     "@types/mime": "^2.0.3",
     "@types/node": "^17.0.18",
@@ -28,6 +30,8 @@
   "dependencies": {
     "chokidar": "^3.5.3",
     "dotenv": "^16.0.0",
+    "js-yaml": "^4.1.0",
+    "luxon": "^2.3.0",
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1",
     "mime": "^3.0.0",
