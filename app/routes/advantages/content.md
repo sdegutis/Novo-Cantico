@@ -1,6 +1,6 @@
 ## Implications of this new design
 
-The design and interaction of these layers has several interesting implications:
+The design and interaction of Novo Cantico's principles have several interesting implications:
 
 * [Zero-downtime deployment](#zero-downtime-deployment)
 
@@ -11,6 +11,8 @@ The design and interaction of these layers has several interesting implications:
 * [Data can live next to code](#data-can-live-next-to-code)
 
 * [No markup language lock-in](#no-markup-language-lock-in)
+
+* [Your data is completely flexible](#your-data-is-completely-flexible)
 
 * [Pre-rendering is the default](#pre-rendering-is-the-default)
 
@@ -56,7 +58,23 @@ Traditionally static site generators either have a fixed markup language, or all
 
 Novo Cantico has no knowledge of your markup languages. But the pseudo-global `__dir` allows easy traversal of the current file's directory, and from there the whole app tree. From this special runtime addition, you can get access to file objects, which includes the file name, path, and a `Buffer` object.
 
-This allows you to grab the contents of your file, parse it in any language you want (I personally usually use MarkdownIt and js-yaml), and do whatever you want with the loaded data, including pre-rendering any pages or creating model objects to house and manage this data.
+This allows you to grab the contents of your file, parse it in any language you want (this site uses MarkdownIt and js-yaml), and do whatever you want with the loaded data, including pre-rendering any pages or creating model objects to house and manage this data.
+
+
+
+### Your data is completely flexible
+
+Because you're in complete control of your content and data, you have complete freedom of how to change it at any point.
+
+As a concrete example, I just recently added images to the blog posts on this site. In order to do this, I had to:
+
+1. Change markdown files into directories containing `content.md`
+2. Add a consistently named file `image.jpg` to each directory
+3. Change how the file is loaded in the `BlogPost` constructor
+
+That's all.
+
+You can see it all in this one short commit: https://github.com/sdegutis/Novo-Cantico/commit/1ab71f8a0c7a38682f1cc2f7f98cf97e9f2a3bbd
 
 
 
