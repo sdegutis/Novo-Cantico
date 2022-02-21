@@ -8,7 +8,7 @@ Humanity develops the arts and sciences by distilling lessons learned from the p
 
 ## This site's three purposes
 
-1. **Share what I made:** Around December 8, 2021, I began to rewrite my website using brand new techniques. I ended up with code I'm convinced is truly innovative, so I'm gradually open sourcing it in the form of this very website's source code, located in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico).
+1. **Share what I made:** Around December 8, 2021, I began to rewrite my personal website using brand new techniques. I ended up with code I'm convinced is truly innovative, so I'm gradually open sourcing it in the form of this very website's source code, located in this [GitHub repo](https://github.com/sdegutis/Novo-Cantico).
 
 2. **Explain how it works:** Many of the concepts developed in Novo Cantico have very useful implications, but which are not always obvious. On this site I will explain how the new web software techniques of Novo Cantico work, and their various practical benefits.
 

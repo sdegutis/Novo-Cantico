@@ -1,4 +1,6 @@
-## Setting up website
+---
+title: Setting up your Novo Cantico website
+---
 
 If you wanted to set up "example.com":
 
