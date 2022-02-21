@@ -13,7 +13,7 @@ There were several problems with existing routing techniques:
 So I thought of what are the purposes of routes:
 
 1. To tie one of my TypeScript functions to a unique handle accessible from the outside world.
-2. To give the user (or more likely SEO and crawlers) some basic indication of what what function does.
+2. To give the user (or more likely SEO crawlers) some basic indication of what that function does.
 
 Because of this, Novo Cantico uses a *push-based* technique for routing, similar to static site generators. The router is just a map of method & path (e.g. `GET /`) to a function.
 
