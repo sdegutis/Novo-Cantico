@@ -5,12 +5,13 @@
 
 What's been accomplished so far:
 
-* A new push-based router
+* Lightweight in-memory TypeScript runtime
+* New push-based router
 * Server-side JSX components
 * Instant hot-reloading locally
 * Instant hot-reloading in production
 * Zero-downtime deployment
-* Pre-rendering built in
+* Pre-rendering by default
 * User-land asset pipelines
 
 This site is an example of Novo Cantico in action.
