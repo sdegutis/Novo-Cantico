@@ -15,7 +15,6 @@ export const NavBar: JSX.Component<{}> = (attrs, children) => <>
       <a href={advantagesPage.route}>Advantages</a> */}
       <a href='https://github.com/sdegutis/Novo-Cantico'>GitHub</a>
       <a href='https://github.com/sponsors/sdegutis?o=esb'>Sponsor</a>
-      <a href='https://twitter.com/NovoCanticoWeb'>Twitter</a>
     </nav>
     <p><ViewSourceLink file={__file}>View navbar's source</ViewSourceLink></p>
   </NarrowContainer>
