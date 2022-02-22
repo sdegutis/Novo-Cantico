@@ -1,21 +1,19 @@
 
 # Novo Cantico
 
-Novo Cantico is a new TypeScript backend web framework with:
+*Exploring how to make web development simple again.*
+
+What's been accomplished so far:
 
 * A new push-based router
 * Server-side JSX components
-* Deep VS Code support
 * Instant hot-reloading locally
 * Instant hot-reloading in production
 * Zero-downtime deployment
-* Automatic static file caching
 * Pre-rendering built in
-* Content-language freedom
+* User-land asset pipelines
 
-This site is brand new, check back regularly as content develops.
-
-I'm also available for hire, [email me](mailto:sbdegutis@gmail.com) and let's talk.
+This site is an example of Novo Cantico in action.
 
 
 
