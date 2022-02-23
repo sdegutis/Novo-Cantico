@@ -9,13 +9,12 @@ export class BlogPost {
   static loadFromFile(dir: FsDir) {
     const file = dir.filesByName['content.md']!;
     const date = DateTime.fromISO(dir.name.slice(0, 10));
-    const slug = dir.name.slice(0, -3);
     const rawContent = file.buffer.toString('utf8').replace('\r\n', '\n');
     const [, frontmatter, mdContent] = rawContent.split(/^---\n(.+?)\n---\n\n(.+?)$/s) as [string, string, string];
     const { title, image: imageAuthor } = JsYaml.load(frontmatter) as any;
     const content = markdown.render(mdContent);
     const image = staticRouteFor(dir.filesByName['image.jpg']!);
-    return new BlogPost(dir.path, slug, title, date, content, image, imageAuthor);
+    return new BlogPost(dir.path, dir.name, title, date, content, image, imageAuthor);
   }
 
   view;
