@@ -3,6 +3,8 @@
 
 *Exploring how to make web development simple again.*
 
+Novo Cantico is a new hybrid web framework. It uses the same technique as a static site generator, but is a dynamic web server for full flexibility.
+
 What's been accomplished so far:
 
 * Lightweight in-memory TypeScript runtime
