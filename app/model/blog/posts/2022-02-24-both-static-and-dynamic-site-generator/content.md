@@ -15,6 +15,8 @@ Finally, I decided to rewrite it using static site generator techniques, while s
 
 * **Routing:** I can generate routes from my data models directly, making them "push" based, rather than "pull" based. This completely solved the issue of having to check URL patterns against nonsense data; if a route isn't generated on site-startup, it will automatically be a 404.
 
+* **Routeable:** The new push-based router naturally leads to an interesting new interface, `Routeable`, which simply has a path, an HTTP method, and a function handler. Because it's an interface, it can be a simple object literal, or a class like [ViewBlogPage](https://github.com/sdegutis/Novo-Cantico/blob/main/app/routes/blog/blog-view.tsx) that can be stored on a model object [like in BlogPost's constructor](https://github.com/sdegutis/Novo-Cantico/blob/main/app/model/blog/post.ts#L31). It also means we can easily access an object's route's path like in the [LatestPosts](https://github.com/sdegutis/Novo-Cantico/blob/main/app/components/latest-posts/latest-posts.tsx#L11) component.
+
 * **View:** I ended up with using JSX to do views server-side. This ends up with much of the same DX convenience that we get when writing client-side React apps: you just import your component and use it where you want. That's it.
 
 * **Hot-reloading:** I wanted the site to regenerate every time I updated a file. So I built a new lightweight in-memory TypeScript runtime, which uses the sucrase library and the built-in vm module to compile source code under `app/` into an in-memory site. The chokidar library reloads this whenever a file beeps.
