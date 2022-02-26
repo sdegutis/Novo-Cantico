@@ -31,7 +31,7 @@ The question really should be, why do we need to load everything *in every reque
 
 Now, assume for a minute that somehow I was magically able to make your HTTP responses *lightning fast*. Do you actually still *need* multiple web servers with the traffic load you're getting? If your reason was solely for performance, then scaling to multiple servers is only *one* performance solution, among other incompatible ones.
 
-Taking that solution off the table, and assuming a single other web server as one of the first principles, what other possibilities open up?
+Taking that solution off the table, and assuming we only need a single lightning-fast web server as one of the first principles, what other possibilities open up?
 
 For one thing, we no longer need data to live separately from the server. There are two reasons to keep them separate: in case the server is destroyed, either by accident or as part of a deployment strategy; and if you're already scaling to multiple servers which each need fresh access to any data at all times.
 
