@@ -12,7 +12,10 @@ export class BlogPost {
     const rawContent = file.buffer.toString('utf8').replace('\r\n', '\n');
     const [, frontmatter, mdContent] = rawContent.split(/^---\n(.+?)\n---\n\n(.+?)$/s) as [string, string, string];
     const { title, image: imageAuthor } = JsYaml.load(frontmatter) as any;
-    const content = markdown.render(mdContent);
+    const content = markdown.render(mdContent.replace(/\!\[(.+?)\]\((.+?)\)/, (whole, title, filename) => {
+      const file = dir.filesByName[filename]!;
+      return `![${title}](${staticRouteFor(file)})`;
+    }));
     const image = staticRouteFor(dir.filesByName['image.jpg']!);
     return new BlogPost(dir.path, dir.name, title, date, content, image, imageAuthor);
   }
