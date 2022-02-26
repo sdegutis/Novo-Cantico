@@ -41,7 +41,9 @@ export class ViewBlogPage implements Routeable {
           <NarrowContainer style='margin-bottom:7em'>
             <h1><a href={this.route}>{this.post.title}</a></h1>
             <p><i>Posted on {this.post.date.toLocaleString()}</i></p>
-            {this.post.content}
+            <div id='post-content'>
+              {this.post.content}
+            </div>
             <p><ViewSourceLink file={this.post}>View this blog post's source</ViewSourceLink></p>
             <p><ViewSourceLink file={__file}>View this page's source</ViewSourceLink></p>
             <LatestPosts />
