@@ -43,7 +43,7 @@ My personal website stores dozens of MB worth of images, and thousands of text-b
 
 I'm convinced pretty much all independent web stores would fit this model, which list a few hundred products, each with a description and a few pictures, and get a few hundred or few thousand visitors per day.
 
-We'd still need to back all this data up somehow, in case the server crashes or gets deleted. And we can still use a database for this, like Postgres, SQLite, or even S3 or GitHub. The point is that the server *now is* the souce of data-truth, and the database is simply a place to back it up to *as it changes*, and to load it from *whenever the server restarts*. That's all it becomes, essentially a backup.
+We'd still need to back all this data up somehow, in case the server crashes or gets deleted. And we can still use a database for this, like Postgres, SQLite, or even S3 or GitHub. The point is that the server *now is* the souce of data-truth, and the database is simply a place to back it up to *as it changes*, and to load it from *whenever the server restarts*. That's all it becomes, essentially a fire-and-forget backup.
 
 Where are we so far? A single web server that has the entire DB in memory. This innovation opens up important new possibilities.
 
