@@ -53,7 +53,7 @@ Instead, we now have a post object *in memory already*, and we can *push* a rout
 
 So what do you have now? A robust web server that runs a very small amount of JavaScript code in the extremely fast V8 engine on each HTTP request, without doing a single DB lookup or file IO or actually *anything async at all*. Fellow senior devs know that running a JavaScript function is *extremely fast*, almost negligible. *And that's all our server does now.*
 
-Since this is orthogonal to what you actually *deliver* to the front-end, if you use proper front-end techniques and optimizations, such as the static-route-generating helper function I mentioned in the last blog post (used to serve the image below), you can create extremely fast-loading websites. For example, this is the Lighthouse score my own personal website got:
+Since this is orthogonal to what you actually *deliver* to the front-end, you can create extremely fast-loading websites if you use proper front-end techniques and optimizations, such as the static-route-generating helper function I mentioned in the last blog post. The image below uses this technique---check out its URL, and [view the source](https://github.com/sdegutis/Novo-Cantico/blob/main/app/model/blog/post.ts#L15-L18), clicking through to the `staticRouteFor` definition. Using this and other novel backend techniques enabled by Novo Cantico, this is the Lighthouse score of this very website, itself run by Novo Cantico:
 
 ![score.png](score.png)
 
