@@ -27,7 +27,7 @@ This is where http starts off well, although it's strange to have a response obj
 
 So why did http and Express use the response object instead of a return result? Because they expect you're going to do a bunch of async calls during your handler, and they wanted to make it async. Node didn't yet have Promises, which would have made this *a little* cleaner, but using async HTTP handlers *is still the wrong solution*.
 
-The question really should be, why do we need to load everything *in every request*? Ostensibly this is because we already needed to scale to multiple web servers, and user data may have changed since the last request, so we must always get the freshest data. Right? But then we have to deal with caching layers, because too can get slow.
+The question really should be, why do we need to load everything *in every request*? Ostensibly this is because we already needed to scale to multiple web servers, and user data may have changed since the last request, so we must always get the freshest data. Right? But then we have to deal with caching layers, because it can get too slow.
 
 Now, assume for a minute that somehow I was magically able to make your HTTP responses *lightning fast*. Do you actually still *need* multiple web servers with the traffic load you're getting? If your reason was solely for performance, then scaling to multiple servers is only *one* performance solution, among other incompatible ones.
 
