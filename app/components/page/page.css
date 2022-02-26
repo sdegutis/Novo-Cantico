@@ -4,6 +4,7 @@ html {
   --bold-color: #000;
   --header-color: #0074cb;
   --link-color: var(--bold-color);
+  --view-source-link-color: #7c7201;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -13,6 +14,7 @@ html {
     --bold-color: #fff;
     --header-color: #19f;
     --link-color: var(--bold-color);
+    --view-source-link-color: #e5e0a8;
   }
 }
 
