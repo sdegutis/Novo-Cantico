@@ -6,7 +6,7 @@ export const LatestPosts: JSX.Component<any> = (attrs, children) => <>
   <div>
     <h2><a href={blogIndexPage.route}>Blog posts</a></h2>
     <ul>
-      {blogPosts.slice(-3).reverse().map(post => <>
+      {blogPosts.slice(-10).reverse().map(post => <>
         <li>
           <a href={post.view.route}>{post.title}</a> &mdash; { }
           {post.date.toLocaleString()}
