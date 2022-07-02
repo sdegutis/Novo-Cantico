@@ -24,9 +24,9 @@
     "skipLibCheck": true,
   },
   "include": [
-    "./app/**/*.ts",
-    "./app/**/*.d.ts",
-    "./app/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
     "./global.d.ts"
   ]
 }
