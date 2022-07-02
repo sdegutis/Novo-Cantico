@@ -51,12 +51,12 @@ If you wanted to set up "example.com":
       3. `echo 'BASE_URL=https://www.example.com/' > .env`
       4. `npm install`
       5. `npm run build`
-      6. `node out/main.js` and notice output
+      6. `node main.js` and notice output
       7. Quit out with Ctrl-C, that was just a test
    9. Make Node.js app stay always on via PM2
       1.  `cd app` if not still in there
       2. `sudo npm install pm2@latest -g`
-      3. `pm2 start out/main.js`
+      3. `pm2 start main.js`
       4. Make sure it's working
          1. `curl -i 'http://localhost:8080'`
       5. `pm2 startup`

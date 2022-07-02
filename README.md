@@ -16,7 +16,7 @@ Now VS Code will automatically watch, build, and type-check your TypeScript code
 ## Trying it out
 
 1. Open terminal in project dir
-2. Run `node out/main.js`
+2. Run `node main.js`
 3. Output should have a URL you can open
 4. Visit `http://localhost:8080/test`
 5. It should say hello world as HTML
